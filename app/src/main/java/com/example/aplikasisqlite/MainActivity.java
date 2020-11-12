@@ -48,19 +48,10 @@ public class MainActivity extends AppCompatActivity {
         //Tambah SQLite
         SQLite = new DbHelper(getApplicationContext());
 
-        FloatingActionButton fab = findViewById(R.id.fab);
 
         //Tambah ListView
         listView = (ListView) findViewById(R.id.list_view);
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //Tambah Intent untuk masuk ke halaman Add and Edit
-                Intent intent = new Intent(MainActivity.this, AddEdit.class);
-                startActivity(intent);
-            }
-        });
 
         //Tambah adapter dan Listview
         adapter = new Adapter(MainActivity.this, itemList);

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        app:srcCompat="@drawable/img_5799" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:background="@android:color/background_dark"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="YONA'S FRIENDS"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:text="View" />
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:text="Map" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
